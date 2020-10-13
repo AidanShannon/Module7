@@ -17,7 +17,8 @@ def search_list():
 
 
 def sort_list():
-
+    animals.sort()
+    return animals  # return works with test statement
 
 
 if __name__ == '__main__':
