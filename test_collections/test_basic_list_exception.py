@@ -18,7 +18,7 @@ class TestList(unittest.TestCase):
         with self.assertRaises(ValueError):                             # this is familiar
             basic_list_exception.make_list()
 
-    @patch('fun_with_collections.basic_list_exception.get_input', return_value='51')  # patch function for input
+    @patch('fun_with_collections.basic_list_exception.get_input', return_value='52')  # patch function for input
     def test_make_list_above_range(self, input):                        # pass input
         with self.assertRaises(ValueError):                             # this is familiar
             basic_list_exception.make_list()
