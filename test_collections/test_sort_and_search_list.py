@@ -9,6 +9,9 @@ class MyTestCase(unittest.TestCase):
     def test_itemNotFound(self):
         self.assertEqual(ss.search_list(), "-1")
 
+    def test_sortList(self):
+        self.assertEqual(ss.sort_list(), ["cat", "cow", "dog", "pig"])
+
 
 if __name__ == '__main__':
     unittest.main()

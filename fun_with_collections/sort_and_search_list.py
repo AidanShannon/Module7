@@ -17,11 +17,10 @@ def search_list():
 
 
 def sort_list():
-    animals.sort()
-    print(animals)  # short function, didn't think return was necessary
+
 
 
 if __name__ == '__main__':
     test_list = search_list()
     print(test_list)
-    sort_list()
+    print(sort_list())
