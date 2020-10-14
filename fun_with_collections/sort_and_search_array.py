@@ -11,7 +11,15 @@ numbers = arr.array('d', [30.5, 15.5, 11.5, 20.5])
 
 
 def search_array():
-    pass
+    """
+    searches for object in array, returns index or -1
+    :return:
+    """
+    my_input = float(input("Which number do you want to search?: "))
+    if my_input in numbers:
+        return numbers.index(my_input)
+    else:
+        return "-1"  # felt that return would work better with if statement
 
 
 def sort_array():
